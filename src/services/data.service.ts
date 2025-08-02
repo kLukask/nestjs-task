@@ -4,7 +4,8 @@ import { Repository } from 'typeorm';
 import { FinancialData } from '../entities/financial-data.entity';
 import { CompanyMetrics } from '../entities/company-metrics.entity';
 import { MarketData } from '../entities/market-data.entity';
-import { RulesEngineService, QueryDecision } from './rules-engine.service';
+import { RulesEngineService } from './rules-engine.service';
+import { QueryDecision } from '../interfaces/query-decision.interface';
 
 @Injectable()
 export class DataService {
